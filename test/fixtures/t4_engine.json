@@ -1,0 +1,6 @@
+{"title":"T","student":"S","sequential":false,"coach_whatsapp":"+20 100 419 6749","items":[
+ {"type":"engine","fen":"start","player_color":"b","full_moves":"7","engine_skill":3,"clock_seconds":120,
+  "engine_skill_stages":[{"from_move":10,"skill":50},[1,20]],"engine_delay_stages":[[3,100],[1,0]],
+  "engine_openings":[["e2e4","e7e5"]],"engine_feedback_enabled":1},
+ {"type":"mate","fen":"6k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1","full_moves":2,"puzzle_rating":"1500"},
+ {"type":"opening","id":"o","line":["e2e4","e7e5"],"player_color":"white"}]}

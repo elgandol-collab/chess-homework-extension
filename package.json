@@ -1,0 +1,1 @@
+{"name":"chess-homework-extension","version":"1.0.0","private":true,"type":"module","dependencies":{"chess.js":"^1.4.0","esbuild":"^0.28.2","fflate":"^0.8.3","stockfish":"^19.0.1"}}

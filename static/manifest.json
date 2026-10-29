@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Chess Homework Trainer | مدرب واجبات الشطرنج",
+  "short_name": "Chess Homework",
+  "version": "1.2.0",
+  "description": "Solve the chess homework your coach sends you (.pgn / .chesshw.json): puzzles, opening drills and games vs Stockfish. Works offline; data stays on your device.",
+  "icons": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "action": { "default_title": "Chess Homework Trainer", "default_icon": { "16": "icons/icon16.png", "32": "icons/icon32.png" } },
+  "background": { "service_worker": "background.js" },
+  "permissions": ["storage"],
+  "content_security_policy": { "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'" },
+  "minimum_chrome_version": "102"
+}

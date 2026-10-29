@@ -1,0 +1,43 @@
+[Event "واجب أسبوع"]
+[HWTitle "واجب الأسبوع 1"]
+[HWStudent "أحمد"]
+[HWSequential "1"]
+[HWType "opening"]
+[HWPlayer "white"]
+
+{Practice the Ruy Lopez} 1. e4 e5 2. Nf3 Nc6 3. Bb5 (3. Bc4 Bc5) 3... a6 $1 4. Ba4 Nf6 5. O-O Be7 *
+
+[Event "Mate in two"]
+[HWType "puzzle"]
+[FEN "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4"]
+[SetUp "1"]
+
+1. Qxf7# {Scholar's mate} 1-0
+
+[Event "Black repertoire"]
+[HWType "opening"]
+[HWPlayer "black"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 *
+
+[Event "Promotion drill"]
+[HWType "puzzle"]
+[FEN "8/P6k/8/8/8/8/6K1/8 w - - 0 1"]
+[SetUp "1"]
+
+1. a8=Q+ Kg6 *
+
+[Event "Play vs engine"]
+[HWType "engine"]
+[HWFullMoves "12"]
+[HWEngineSkill "5"]
+[HWEngineMovetimeMs "400"]
+[HWClockSeconds "180"]
+[HWClockIncrementSeconds "2"]
+[HWEngineMinDelayMs "1000"]
+[HWPlayerMinDelayMs "800"]
+[HWEngineDelayStages "1:500; 6:1500; bad; 9:x"]
+[HWOpeningBook "e2e4 c7c5; d2d4 g8f6 c2c4 g7g6"]
+[HWEngineFeedback "yes"]
+
+*

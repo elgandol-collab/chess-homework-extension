@@ -1,0 +1,2 @@
+{"title":"voice notes","student":"x","sequential":false,"puzzle_focus_sound_file":"hint.wav","opening_wrong_sound_file":"chess-horse.mp3","publish_sound_file":"hw.wav","items":[
+ {"type":"opening","id":"o1","instructions":"opening drill","fen":"start","player_color":"white","line":["e2e4","e7e5","g1f3","b8c6"],"move_voice_notes":{"1":"ok.wav","3":"ok3.mp3"}}]}

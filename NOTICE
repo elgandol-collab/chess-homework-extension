@@ -1,0 +1,28 @@
+Chess Homework Trainer (browser extension)
+Copyright (C) the extension author(s). Licensed under the GNU General Public License, version 3 or (at your option) any later version (see LICENSE).
+
+The complete corresponding source code of this extension is available at the URL shown on the extension's "About & licenses" page
+(and in src/config.js: SOURCE_URL).
+
+Third-party components
+----------------------
+1. Stockfish (chess engine) — GNU GPL v3. https://github.com/official-stockfish/Stockfish
+   Stockfish.js (WebAssembly build, version 19, "lite single-threaded") by Nathan Rugg and contributors — GNU GPL v3.
+   https://github.com/nmrugg/stockfish.js   Files: engine/stockfish-19-lite-single.js, engine/stockfish-19-lite-single.wasm
+   The engine files are redistributed unmodified.
+
+2. chess.js — BSD 2-Clause License. Copyright (c) 2025, Jeff Hlywa. https://github.com/jhlywa/chess.js
+
+3. fflate — MIT License. Copyright (c) 2023 Arjun Barrett. https://github.com/101arrowz/fflate
+
+4. Chess piece images (pieces/*.png) — the "Cburnett" set by Colin M.L. Burnett (Wikimedia Commons, en:User:Cburnett),
+   which the author publishes under several licenses (GFDL, BSD, GPL v2-or-later, and CC BY-SA 3.0).
+   They are used here under the GPL (v2 or later) option, which is compatible with this extension's GPLv3 license.
+
+5. sounds/* — voice clips (rush warnings, focus/wrong alerts, move voice notes, chimes) recorded/produced by the extension author.
+   move.wav, capture.wav and hint.wav are synthesized from scratch (sine + noise) by the author.
+
+Compliance checklist for the maintainer before each release
+-----------------------------------------------------------
+- SOURCE_URL in src/config.js points to the public repository containing exactly this release's source.
+- LICENSE, NOTICE and PRIVACY.md ship inside the extension package.

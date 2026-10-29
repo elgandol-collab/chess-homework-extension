@@ -1,0 +1,14 @@
+import fs from 'node:fs'; import { unzipSync, strFromU8 } from 'fflate';
+import { loadHomework } from '../src/model.js'; import { newProgress } from '../src/session.js';
+import { buildZip, buildPgn } from '../src/report.js'; import { setLang } from '../src/i18n.js';
+setLang('ar');
+const hw = loadHomework(fs.readFileSync('fixtures/t1.pgn', 'utf8'), 't1.pgn');
+const progress = Object.fromEntries(hw.items.map((it) => [it.id, newProgress(it)]));
+const p0 = progress[hw.items[0].id]; p0.completed = true; p0.move_index = hw.items[0].moves.length; p0.move_think_times = [3.2, 7.9, 65.4]; p0.wrong_attempts = 2;
+const p1 = progress[hw.items[1].id]; p1.completed = true; p1.move_index = 1; p1.move_think_times = [12];
+const eng = hw.items[4]; progress[eng.id].moves_played = ['e2e4', 'c7c5', 'g1f3', 'd7d6']; progress[eng.id].move_think_times = [4, 9]; progress[eng.id].completed = false;
+const { name, bytes } = buildZip(hw, progress, { rating: 1216, solved: 1, correct: 1 });
+const files = unzipSync(bytes);
+fs.mkdirSync('out', { recursive: true });
+for (const [k, v] of Object.entries(files)) fs.writeFileSync('out/' + k.replace(/[^\w.]/g, '_'), v);
+console.log(name, Object.keys(files).length, 'files'); console.log(strFromU8(Object.values(files).find((_, i) => Object.keys(files)[i].endsWith('.txt'))));
